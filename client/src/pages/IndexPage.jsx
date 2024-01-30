@@ -18,7 +18,7 @@ const IndexPage = () => {
 
   const fetchPlaces = async () => {
     try {
-      const response = await axios.get("http://localhost:4000/places/");
+      const response = await axios.get("https://deploy-test-0lrr.onrender.com/places/");
       setPlaces(response.data); // Actualizamos el estado con los lugares obtenidos
     } catch (error) {
       console.error("Error al obtener los lugares:", error);
